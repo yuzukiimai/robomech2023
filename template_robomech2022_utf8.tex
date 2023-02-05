@@ -43,7 +43,7 @@ In addition, we proposed a new method of collecting teacher data to reinforce th
 \small
 \section{緒言}%===========================本文：明朝体・9pt（欧文Times New Roman, 9pt）、文字間隔は１行26文字程度、行間隔は4.2mm程度にして下さい。
 我々は, 入出力関係を直接学習する end-to-end 学習器により,
-人の操作ではなく，地図ベースのナビゲーションシステムを用いた
+人の操作ではなく, 地図ベースのナビゲーションシステムを用いた
 経路追従行動を視覚に基づいてオンラインで模倣する手法を提案し,
 その有効性を実験により検証してきた[1][2].
 
@@ -55,23 +55,95 @@ In addition, we proposed a new method of collecting teacher data to reinforce th
 例えば, Muller らは, 人が操作したコントローラ操作を教師データとして学習することで, 
 オフロード環境で障害物を回避しながら走行できることを確認した[4].
 また, Bojarski らは画像と人が操作した制御コマンドを end-to-end 学習するこ
-とで，自動車を対象とした自律移動手法を提案した[5].
+とで,自動車を対象とした自律移動手法を提案した[5].
 
 しかし, それらの研究では必ずしも学習した経路を追従できる
 わけではなく, 目標とする経路から外れていく様子が確認されている.
-その要因の一つとして，目標となる経路からズレが生じた際
+その要因の一つとして, 目標となる経路からズレが生じた際
 に訓練データにない状態に陥り, 目標となる経路への復帰ができなくなったことが考えられる.
 すなわち経路へ復帰するための学習データが不足していることが考えられる.
 
 そこで本稿では, カメラ画像を入力とした end-to-end 学習による自律移動手法において, 図1に示すような
 常に経路周辺を学習する場合と, 図2に示すような目標経路周辺だけでなく目標経路から離れた状態も学習する場合の
-二つの方法でデータセットを収集し, 学習を行う. そして, その学習によって生成された経路追従行動を分析
+二つの方法でデータセットを収集し, 学習を行う.[6] そして, その学習によって生成された経路追従行動を分析
 を行い, 離れた状態からの復帰行動を学習することが, 有効であることを明らかにする. それに加え, 
 目標経路への復帰行動を強化する教師データ収集法を新たに提案し, 有効性を検証する.
 
 
+\begin{figure}[h!]
+  \centering
+   \includegraphics[height=34mm]{./figs/only.png}
+   \vspace*{-5mm}
+   \caption{Learning only around the target path}
+\end{figure}
+
+\begin{figure}[h!]
+  \centering
+   \includegraphics[height=34mm]{./figs/outof.png}
+   \vspace*{-5mm}
+   \caption{Learning also for states away from the target path}
+\end{figure}
+
+ 
+\section{地図ベースのナビゲーションをオンラインで模倣する手法}
+地図ベースのナビゲーションをオンラインで模倣する手法の概要を以下に示す.
+この手法は, 地図ベースのナビゲーションシステムの出力である角速度を教師データとして学習し, 
+その後, 画像を入力とした学習器の出力によってロボットを制御する. 本稿では, 
+地図ベースのナビゲーション教師データとして学習する段階を学習フェーズとし, 学習器の出
+力でロボットが自律移動できるかテストする段階をテストフェーズとする.
+
+\subsection{学習フェイズ}
+図3に学習フェーズのシステムの概要を示す. 学習フェーズでは地図ベースのナビ
+ゲーションを利用することで, ロボットは自律移動を行う. それと同時に, 画像と地図ベー
+スのナビゲーションシステムから出力される目標角速度をペアにしたデータセットを収集し, 
+end-to-end 学習を行う.
+地図ベースのナビゲーションは LiDAR とオドメトリを入力とするのに対し, 学習器は画像
+を入力とする. 本手法を用いて学習することで, LiDAR, オドメトリを使用した時と同じ行
+動を, 画像のみで行うことが期待できる. なお他の研究に倣い, ３台のカメラを用いて学習を
+行う [5][7]. この時, 表1に示すように左右のカメラにオフセットを加え,データセッ
+トに与えることでデータの量を増やすことに加え,過学習を防ぐ効果が期待できる.画像は
+64 x 48 にリサイズして使用する.ロボットを制御するためのモジュールは navigation[8] と
+学習器の二つで構成されており,この二つを切り替えることが可能となっている.
+
+\begin{figure}[h!]
+  \centering
+   \includegraphics[height=42mm]{./figs/learning.png}
+   \vspace*{-4mm}
+   \caption{Learning phase}
+\end{figure}
 
 
+\begin{table}[htbp]
+  \caption{: Three cameras and data to be labeled} \vspace*{3mm}
+  \hspace*{-7mm}
+  \begingroup
+    \renewcommand{\arraystretch}{1.2}
+    \begin{tabular}{|l|l|}
+      \hline
+      Cameras & Labelling data [rad/s] \\
+      \hline
+      Left camera & Map-based navigation system output + 0.2 \\
+      Center camera & Map-based navigation system output \\
+      Right camera & Map-based navigation system output - 0.2 \\
+      \hline
+    \end{tabular}
+  \endgroup
+\end {table}
+
+
+\subsection{テストフェイズ}
+テストフェーズでは, Fig. 3.4 のように学習フェーズで学習したモデルを用いてロボット
+を制御し, 律移動できるかテストする. 64x48 にリサイズした画像を学習器に入力し, の
+推定結果をロボットの目標角速度としてロボットを自律移動させる.ロボットの角速度は学習
+器の出力を用いるが, 進速度は学習フェーズと同様に一定 (0.2m/s) とする.なお, スト
+フェーズでは３台のカメラのうち, 央のカメラのみ使用する.
+
+\begin{figure}[h!]
+  \centering
+   \includegraphics[height=42mm]{./figs/test.png}
+   \vspace*{-4mm}
+   \caption{Test phase}
+\end{figure}
 
 
 \footnotesize
@@ -105,6 +177,23 @@ Bojarski, Mariusz, and et al.
 "End to end learning for self-driving cars".
 arXiv:1604.07316, 2016.
 
+\bibitem{6}
+清岡優祐 , 岡田眞也 , 岩井一輝 , 上田隆一 , 林原靖男 .
+より経路追従行動をオンラインで模倣する手法の提案
+視覚と行動の end-to-end 学習に
+ー データセットと生成された
+経路追従行動の解析 ー . 計測自動 制御学会 SI 部門講演会 SICE-SI2021 予稿集 , pp.1071-1075, 2021.
+
+\bibitem{7}
+Moridian, Barzin, Anurag Kamal, and Nina Mahmoudian.
+Learning navigation
+tasks from demonstration for semi-autonomous remote operation of mobile robots .
+IEEE International Symposium on Safety, Security, and Rescue Robotics (SSRR),
+2018.
+
+\bibitem{8}
+ros-planning, navigation リポジトリ ( 最終閲覧日 :2023年 2月6日 ). https://
+github.com/ros-planning/navigation.
 
 \end{thebibliography}
 
