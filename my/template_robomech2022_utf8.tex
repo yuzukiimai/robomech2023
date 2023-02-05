@@ -1,0 +1,81 @@
+\documentclass{jarticle}
+\usepackage{robomech2022}
+\usepackage[dvipdfmx]{graphicx}
+
+\begin{document}
+\makeatletter
+\title{視覚と行動のend-to-end学習により経路追従行動をオンラインで\\模倣する手法の提案}
+{―経路への復帰行動の解析と復帰行動を強化する教師データ収集法の検討―}
+{A proposal for an online imitation method of
+path-tracking behavior by end-to-end\\ learning of vision and action}
+{-Analysis of return-to-pathway behavior and
+a method of collecting training data to
+enhance\\ return-to-pathway behavior-}
+
+\author{
+\begin{tabular}{ll}
+ \hspace{1zw}○学\hspace{1zw}今井悠月 (千葉工大)&\hspace{1zw}学\hspace{1zw} 清岡優祐(千葉工大)\\
+ \hspace{1zw}\hspace{1zw}正\hspace{1zw}林原靖男 (千葉工大)&\hspace{1zw}正\hspace{1zw} 上田隆一(千葉工大)\\
+ % ※協賛・後援団体の会員資格で発表される場合は「正・学」は不要です。
+ &\\
+ \multicolumn{2}{l}{\small Yuzuki IMAI, Chiba Institute of Technology, s20c1015as@s.chibakoudai.jp}\\
+ \multicolumn{2}{l}{\small Yusuke KIYOOKA, }\\
+ \multicolumn{2}{l}{\small Yasuo HAYASHIBARA and Ryuichi UEDA, Chiba Institute of Technology}\\
+\end{tabular}
+}
+\makeatother
+
+\abstract{ \small 
+Papers submitted must be original, and previously unpublished. The responsibility for the contents of published articles rests solely with the authors and not the society. Copyright of the papers published belongs to the JSME (Japan Society of Mechanical Engineers). [Abstract: Times New Roman, 9pt, 100-150words]
+}
+
+\date{} % 日付を出力しない
+\keywords{Autonomous mobile robot, Navigation, End-to-end learning, dataset}
+
+\maketitle
+\thispagestyle{empty}
+\pagestyle{empty}
+
+\small
+\section{緒言}%===========================本文：明朝体・9pt（欧文Times New Roman, 9pt）、文字間隔は１行26文字程度、行間隔は4.2mm程度にして下さい。
+我々は, 入出力関係を直接学習する end-to-end 学習器により,
+人の操作ではなく，地図ベースのナビゲーションシステムを用いた
+経路追従行動を視覚に基づいてオンラインで模倣する手法を提案し,
+その有効性を実験により検証してきた[1][2].
+
+地図ベースのナビゲーションとは, LiDAR や IMU, ホイールオドメトリなど複数のセンサから占有格子地図を作成し, その地図
+を用いて自己位置推定, 経路計画, 制御などの複数のタスクを達成することで目的となる場所
+へ自律的に移動する手法である [3].
+
+近年, 画像を入力とした end-to-end 学習による自律移動手法が注目されている.
+例えば, Muller らは，人が操作したコントローラ操作を教師データとして学習することで, 
+オフロード環境で障害物を回避しながら走行できることを確認した[4].
+また, Bojarski らは画像と人が操作した制御コマンドを end-to-end 学習するこ
+とで，自動車を対象とした自律移動手法を提案した[5].
+
+しかし, それらの研究では必ずしも学習した経路を追従できる
+わけではなく, 目標とする経路から外れていく様子が確認されている.
+その要因の一つとして，経路へ復帰するための学習データが不足していることが考えられる.
+
+そこで本稿では, カメラ画像を入力とした end-to-end 学習による自律移動手法において, 目標経路から
+離れた状態からの復帰行動を学習することが, 有効であることを明らかにする. それに加え, 
+目標経路への復帰行動を強化する教師データ収集法を新たに提案し, 有効性を検証する.
+
+
+
+
+
+
+\footnotesize
+\begin{thebibliography}{99}
+
+\bibitem{Shinjuku98}
+新宿大五朗，渋谷次郎，東京　学，``キャスティングマニピュレーションに関する研究（第1報，可変長の紐状柔軟リンクを有するマニピュレータの提案とそのスイング制御法）''，機論C編, vol.64-626, pp.3854--3861, 1998.
+
+\bibitem{Shinjuku99}
+Shinjuku, D., Shibuya, J. and Tokyo, M., ``Swing Motion Control of Casting Manipulation,'' IEEE Control Systems, vol.19-4, pp.56--64, 1999.
+
+\end{thebibliography}
+
+\normalsize
+\end{document}
