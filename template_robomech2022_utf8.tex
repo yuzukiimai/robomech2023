@@ -227,9 +227,9 @@ machine output method では,  50 回中 29 回コースを1周することに�
 また, 一つの座標につき 5方向（目標経路を追従するように御した時のロボットの向きを基準とし
 て -10 度〜 10 度を± 5 度ずつ傾けた方向）をロボットの初期姿勢とした. 64 x 48 つまり,  
 一つの学習モデルにつき 420 ロボットの初期位置 x(ロボットの方向)回, ロボット走行させ, 
-経路へ復帰できるのか調査した.ここで, 図10に示すように, 壁に衝突することなく目標経
-路に近づいて, 経路周辺 (0.1m 以内 )を４秒間走行することができれば経路復帰に成功したと
-判断した.逆に, 壁に衝突した場合を経路復帰に失敗したと判断した.
+経路へ復帰できるのか調査した.ここで, 図10に示すように, 壁に衝突することなく目標経路に近づいて, 
+経路周辺 (0.1m 以内)を 4秒間走行することができれば経路復帰に成功したと判断した.
+逆に, 壁に衝突した場合を経路復帰に失敗したと判断した.
 
 
 \begin{figure}[h!]
@@ -266,81 +266,82 @@ machine output method では,  50 回中 29 回コースを1周することに�
 
 
 \subsection{解析結果}
-解析の結果の一部を図12, 図13に示す. 図12は, ロボットが走行し始めた場
+解析の結果の一部を図11, 図12に示す. 図12は, ロボットが走行し始めた場
 所と経路復帰に成功した回数を示している. 1 つの座標につきロボットの方向を変えながら
 5回経路に戻れるか調査しており, 経路復帰に成功した回数を色で表している.この結果か
-ら， 2つの手法ともに曲がり角に入る前で経路復帰に失敗する傾向があることが確認できた.
-Fig. 5.5 は経路復帰に失敗した時のロボットの軌跡を表している. Fig. 5.5(a) に示すように，
-Path following method では曲がり角で，曲がることなく直進する傾向があったのに対し，
-Fig. 5.5(b) に示すように， Using learning machine output method では，曲がり角で曲がる
+ら, 2つの手法ともに曲がり角に入る前で経路復帰に失敗する傾向があることが確認できた.
+図12は経路復帰に失敗した時のロボットの軌跡を表している. 図12(a)に示すように,
+Path following method では曲がり角で, 曲がることなく直進する傾向があったのに対し, 
+図12(b)に示すように, Using learning machine output method では, 曲がり角で曲がる
 動作がより多く確認できた.
-また，４章で示した実験で生成した 50 個の学習モデルのうち 5 個を解析し，その平均した
-結果を， Fig. 5.6 に示す.この図は，目標経路からの距離ごとに経路復帰に成功した割合を
-表している. Path following method では経路周辺が経路復帰できる確率が高いが，経路から
-離れると経路に復帰する確率は低くなっていく傾向が見られた.それに対し， Using learning
-machine output method は，進行方向を基準とした経路の右側からロボットを走行させた場
-合， Path following method と比べて経路復帰できる確率が高いことが分かった.
-これらのことから，経路周辺の状態だけでなく経路から離れた状態も学習することで，経路
+また, 4章で示した実験で生成した 50 個の学習モデルのうち 5 個を解析し, その平均した
+結果を, 図13に示す.この図は, 目標経路からの距離ごとに経路復帰に成功した割合を表している. 
+Path following method では経路周辺が経路復帰できる確率が高いが, 経路から
+離れると経路に復帰する確率は低くなっていく傾向が見られた.それに対し, Using learning
+machine output method は, 進行方向を基準とした経路の右側からロボットを走行させた場
+合, Path following method と比べて経路復帰できる確率が高いことが分かった.
+これらのことから, 経路周辺の状態だけでなく経路から離れた状態も学習することで, 経路
 から離れても経路復帰できる確率が高まることが確認できた.
 
 \begin{figure}[htbp]
   \begin{minipage}[t]{0.5\linewidth}
     \centering
     \includegraphics[keepaspectratio, scale=0.24]{figs/a.png}
-    \subcaption{Composite}
+    \subcaption{Path following method}
   \end{minipage}
   \begin{minipage}[t]{0.5\linewidth}
     \centering
     \includegraphics[keepaspectratio, scale=0.24]{figs/b.png}
-    \subcaption{Gradation}
+    \subcaption{Using learning machine output method}
   \end{minipage}\vspace*{2mm}
-  \caption{subcaptionを用いて図を並べる}
+  \caption{Visualization of the number of path returns}
 \end{figure}
 \vspace*{-2.5mm}
 \begin{figure}[htbp]
   \begin{minipage}[t]{0.5\linewidth}
     \centering
     \includegraphics[keepaspectratio, scale=0.24]{figs/c.png}
-    \subcaption{Composite}
+    \subcaption{Path following method}
   \end{minipage}
   \begin{minipage}[t]{0.5\linewidth}
     \centering
     \includegraphics[keepaspectratio, scale=0.24]{figs/d.png}
-    \subcaption{Gradation}
+    \subcaption{Using learning machine output method}
   \end{minipage}\vspace*{2mm}
-  \caption{subcaptionを用いて図を並べる}
+  \caption{Robot trajectory during analysis}
 \end{figure}
 
 
 
 \begin{figure}[h!]
   \centering
-   \includegraphics[height=40mm]{./figs/path.png}
-   \caption{Using learning machine output method}
+   \includegraphics[height=36.6mm]{./figs/path.png}
+   \caption{Percentage able to return to the pathway}
 \end{figure}
 
 
 
 \section{経路復帰行動を強化する教師データ収集法の検討}
 
-経路から離れた状態も学習することで，経路を追従できる確
-率が高まることが明らかになった． よって, 経路復帰行動を強化するためのデータセット収
+経路から離れた状態も学習することで, 経路を追従できる確
+率が高まることが明らかになった. よって, 経路復帰行動を強化するためのデータセット収
 集方法を提案し, 実験を行う.
 
 \subsection{提案するデータセット収集方法}
-提案する手法では，経路から離れるほど同じデータをデータセットに加える．よって提案するデータセット収集法では 
-Using learning machine output method に比べ，経路から離れた状態からの復帰行動を多く学習することになる．
-本稿では, この収集法を Enhanced return action method とする．
+提案する手法では, 経路から離れるほど同じデータをデータセットに加える.
+よって提案するデータセット収集法では Using learning machine output method に比べ, 
+経路から離れた状態からの復帰行動を多く学習することになる.
+本稿では, この収集法を Enhanced return action method とする.
 
 \begin{figure}[h!]\vspace*{-3mm}
   \centering
    \includegraphics[height=45mm]{./figs/method.png}
-   \caption{Using learning machine output method}
+   \caption{Number of data to be collected in the proposed method}
 \end{figure}
 
 
 \subsection{シミュレータを用いた実験}
-提案するデータセット収集法の有効性を検証するため，シミュレータを用いた実験を行う．
+提案するデータセット収集法の有効性を検証するため, シミュレータを用いた実験を行う.
 
 \subsubsection{実験装置}
 実験装置は上で説明したものと同様である.
@@ -349,9 +350,10 @@ Using learning machine output method に比べ，経路から離れた状態か�
 実験方法は上で説明したものと同様である.
 
 \subsubsection{実験結果}
-実験の結果を Table 6.1 に示す. 提案するデータセット収集法の方が経路を追従できる確率が高いことが分かった．
-ここで，データセットに含まれる目標経路からの距離で分類した学習データの割合のグラ
-フを Fig. 6.3 に示す． Enhanced return action method は，より経路から離れた状態のデータを多く収集していることが確認された．
+実験の結果を表2に示す. 提案するデータセット収集法の方が経路を追従できる確率が高いことが分かった.
+ここで, データセットに含まれる目標経路からの距離で分類した学習データの割合のグラフを
+図15に示す. Enhanced return action method は, より経路から離れた状態のデータを多く収集している
+ことが確認された.
 
 
 \begin{table}[h!]
@@ -370,22 +372,22 @@ Using learning machine output method に比べ，経路から離れた状態か�
 \begin{figure}[h!]\vspace*{-5mm}
   \centering
    \includegraphics[height=55mm]{./figs/enh.png}
-   \caption{Using learning machine output method}
+   \caption{Percentage of the dataset in the experiment}
 \end{figure}
 
 \subsection{生成された経路追従行動の解析}
-5 章で行った解析と同様に，本章で提案する手法によって生成した経路追従行動を調査する．
-5.1 章で示した方法と同様に，実験により生成した学習モデルを用いて解析を行う．
-6.3.3 章で示した実験で生成した 50 個の学習モデルのうち 5 個を解析し，その結果を平均し
-たものを Fif. 6.4 に示す．この図は，目標経路からの距離ごとに経路復帰に成功した割合を表
-している．この結果から，目標経路の周辺全てにおいて，提案する手法は，既存の手法である
+3 章で行った解析と同様に，本章で提案する手法によって生成した経路追従行動を調査する．
+4 章で示した方法と同様に, 実験により生成した学習モデルを用いて解析を行う．
+5.2.3 章で示した実験で生成した 50 個の学習モデルのうち 5 個を解析し，その結果を平均し
+たものを図16に示す. この図は, 目標経路からの距離ごとに経路復帰に成功した割合を表
+している. この結果から, 目標経路の周辺全てにおいて, 提案する手法は，既存の手法である
 Using learning machine output method と比べて経路復帰に成功する確率が高いことが確認
-できた．
+できた.
 
 \begin{figure}[h!]\
   \centering
    \includegraphics[height=40mm]{./figs/last.png}
-   \caption{Using learning machine output method}
+   \caption{Percentage able to return to the pathway}
 \end{figure}
 
 
