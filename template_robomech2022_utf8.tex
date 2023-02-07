@@ -57,7 +57,7 @@ In addition, we proposed a new method of collecting teacher data to reinforce th
 例えば, Muller らは, 人が操作したコントローラ操作を教師データとして学習することで, 
 オフロード環境で障害物を回避しながら走行できることを確認した[4].
 また, Bojarski らは画像と人が操作した制御コマンドを end-to-end 学習するこ
-とで,自動車を対象とした自律移動手法を提案した[5].
+とで, 自動車を対象とした自律移動手法を提案した[5].
 
 しかし, それらの研究では必ずしも学習した経路を追従できる
 わけではなく, 目標とする経路から外れていく様子が確認されている.
@@ -65,7 +65,7 @@ In addition, we proposed a new method of collecting teacher data to reinforce th
 
 そこで本稿では, カメラ画像を入力とした end-to-end 学習による自律移動手法において,
 常に経路周辺を学習する場合と, 目標経路周辺だけでなく目標経路から離れた状態も学習する場合の
-二つの方法でデータセットを収集し, 学習を行う.[6] そして, その学習によって生成された経路追従行動を分析
+二つの方法でデータセットを収集し, 学習を行う[6]. そして, その学習によって生成された経路追従行動を分析
 を行い, 離れた状態からの復帰行動を学習することが, 有効であることを明らかにする. それに加え, 
 目標経路への復帰行動を強化する教師データ収集法を新たに提案し, 有効性を検証する.
 
@@ -126,14 +126,14 @@ navigation[7]を用いて自律移動を行う. それと同時に, 画像とnav
 
 経路周辺だけでなく,経路から離れた状態を学習することが経路追従行動を模倣
 する上で有効であることを明らかにするめにシミュレータを用いて実験を行う. 
-実験は,経路周辺を学習した場合と, 経路から離れた状態も学習する場合の二つのデータセット収集
-方法で行い,学習器の出力で経路を追従できるか調査する.
+実験は, 経路周辺を学習した場合と, 経路から離れた状態も学習する場合の二つのデータセット収集
+方法で行い, 学習器の出力で経路を追従できるか調査する.
 
 \subsection{実験装置}
 実験にはGazebo[8]というシミュレータを用いた.
-環境は図8に示すような, 千葉工業大学津田沼キャンパス2号館3階を模したモデルであ
-る.ロボットは,  Turtlebot3[9] にカメラを 3 つ取り付けたモデルを用いた. 図9にロ
-ボットが追従する経路を示す.ロボットはこの経路を追従するように学習を行う.
+環境は図4に示すような, 千葉工業大学津田沼キャンパス2号館3階を模したモデルである.
+ロボットは,  Turtlebot3[9] にカメラを 3 つ取り付けたモデルを用いた. 
+図5にロボットが追従する経路を示す.ロボットはこの経路を追従するように学習を行う.
 
 \begin{figure}[htbp]
   \begin{minipage}{0.5\hsize}
@@ -153,7 +153,7 @@ navigation[7]を用いて自律移動を行う. それと同時に, 画像とnav
 比較する 2 つのデータセットの収集方法を述べる.\\
 
 \subsubsection{経路周辺の状態のみを学習する手法}
-経路周辺の状態のみを学習する手法を Fig. 4.3 に示す.ロボットは常に navigation の出力
+経路周辺の状態のみを学習する手法を図6に示す.ロボットは常に navigation の出力
 で経路を追従するように行動する.そして, その行動を常にデータセットとして収集する.
 本稿では, このデータセット収集方法を Path following method とする.
 
@@ -164,9 +164,9 @@ navigation[7]を用いて自律移動を行う. それと同時に, 画像とnav
 \end{figure}
 
 \subsection{経路から離れた状態も学習する手法}
-経路から離れた状態も学習する手法を Fig. 4.4 に示す.経路周辺と経路から離れたときで, 
-ロボットを制御するモジュールを切り替えている.経路周辺では, 学習器の出力を用いてい
-る.ロボットが経路から離れた場合,  navigation で経路へ復帰させる.データセットに追加
+経路から離れた状態も学習する手法を図7に示す.経路周辺と経路から離れたときで, 
+ロボットを制御するモジュールを切り替えている.経路周辺では, 学習器の出力を用いている.
+ロボットが経路から離れた場合,  navigation で経路へ復帰させる. データセットに追加
 するデータは常に navigation の出力である.このように経路周辺で学習器の出力を用いてロ
 ボットを制御することで,  Path following method に比べて, 経路から離れた状態のデータを
 多く収集できることが期待できる.このデータセット収集方法を本論文では Using learning
@@ -179,19 +179,19 @@ machine output method とする.
 \end{figure}
 
 \subsection{実験方法}
-実験は学習フェーズの後, テストフェーズに移行し, コースを１周できるか確認する.学習
-フェーズでは 3 章で説明した, 地図ベースのナビゲーションを模倣する手法を用いる.
-データセットは0.2 秒周期で取得し,  10000 エピソード学習行った.
-壁に衝突することなくコースを１周することができれば経路追従に成功したと判断し, この
+実験は学習フェーズの後, テストフェーズに移行し, コースを１周できるか確認する.
+学習フェーズでは 2 章で説明した, 地図ベースのナビゲーションを模倣する手法を用いる.
+データセットは 0.2 秒周期で取得し,  10000 エピソード学習行った.
+壁に衝突することなくコースを1周することができれば経路追従に成功したと判断し, この
 実験を二つのデータセット収集方法でそれぞれ 50 回ずつ行った.
 
 \subsection{実験結果}
-実験の結果を Table 4.1 に示す. Path following method で学習したモデルでロボットを
-制御した場合, 一度もコースを 1 周することができなかった.それに対し,  Using learning
-machine output method では,  50 回中 29 回コースを 1 周することに成功した
+実験の結果を表1に示す. Path following method で学習したモデルでロボットを
+制御した場合, 一度もコースを 1周することができなかった.それに対し, Using learning
+machine output method では,  50 回中 29 回コースを1周することに成功した
 
 ここで, データセットに含まれる目標経路からの距離で分類した学習データの割合のグラフ
-を Fig. 4.9 に示す.これは, それぞれのデータセット収集方法で 50 回ずつ実験を行い, 平均
+を図8に示す.これは, それぞれのデータセット収集方法で 50 回ずつ実験を行い, 平均
 した結果である. Using learning machine output method の方が Path following method に
 比べて目標経路から離れた状態のデータセットを多く収集していることを確認した.
 これらのことから, 目標経路から離れた状態のデータセットを多く収集することで経路を追
@@ -219,43 +219,49 @@ machine output method では,  50 回中 29 回コースを 1 周することに
 
 \section{生成された経路追従行動の解析}
 \subsection{解析方法}
-生成された経路追従行動を比較するため, 実験で生成した学習モデルでロ
-ボットを制御し, その経路追従行動を調査する.ロボットの初期位置を,  図のような場
-所に指定してロボットを走行させる.ロボットの進行方向を基準にして右側を正の値とし, 左
-側を負の値とした.調査する場所は, 曲がり角付近とした. この曲がり角というのは, 
-示した実験で経路追従行動に失敗する回数が特に多かった場所である.この場所を
-対象に,  84 カ所からロボットを走行させ, 経路に戻ることができるのか調査した.また, 一
-つの座標につき５方向（目標経路を追従するように御した時のロボットの向きを基準とし
-て -10 度〜 10 度を± 5 度ずつ傾けた方向）をロボットの初期姿勢とした. 64 x 48 つまり,  1
-つの学習モデルにつき 420 ロボットの初期位置 x(ロボットの方向 )回, ロボット走行させ, 経
-路へ復帰できるのか調査した.ここで,  Fig. 5.3 に示すように, 壁に衝突することなく目標経
+生成された経路追従行動を比較するため, 実験で生成した学習モデルでロボットを制御し, 
+その経路追従行動を調査する.ロボットの初期位置を,  図9のような場所に指定してロボットを走行させる.
+ロボットの進行方向を基準にして右側を正の値とし, 左側を負の値とした.調査する場所は, 曲がり角付近とした. 
+この曲がり角というのは, 実験において, 経路追従行動に失敗する回数が特に多かった場所である.
+この場所を対象に,  84 カ所からロボットを走行させ, 経路に戻ることができるのか調査した.
+また, 一つの座標につき 5方向（目標経路を追従するように御した時のロボットの向きを基準とし
+て -10 度〜 10 度を± 5 度ずつ傾けた方向）をロボットの初期姿勢とした. 64 x 48 つまり,  
+一つの学習モデルにつき 420 ロボットの初期位置 x(ロボットの方向)回, ロボット走行させ, 
+経路へ復帰できるのか調査した.ここで, 図10に示すように, 壁に衝突することなく目標経
 路に近づいて, 経路周辺 (0.1m 以内 )を４秒間走行することができれば経路復帰に成功したと
 判断した.逆に, 壁に衝突した場合を経路復帰に失敗したと判断した.
 
 
 \begin{figure}[h!]
   \centering
-   \includegraphics[height=40mm]{./figs/k.png}
-   \caption{Using learning machine output method}
+   \includegraphics[height=35mm]{./figs/k.png}
+   \caption{Initial position of the robot during analysis}
 \end{figure}
 
 
-
-
 \begin{figure}[htbp]
-  \begin{tabular}{cc}
-    \hspace*{-5mm}
-    \begin{minipage}[t]{0.5\hsize}
-      \centering
-      \includegraphics[keepaspectratio, scale=0.4]{figs/init.png}
-      \caption{Composite}
-    \end{minipage} &
-    \begin{minipage}[t]{0.5\hsize}
-      \centering
-      \includegraphics[keepaspectratio, scale=0.4]{figs/return.png}
-      \caption{Gradation}
-    \end{minipage}
-  \end{tabular}
+  \begin{minipage}[t]{0.5\linewidth}
+    \centering
+    \includegraphics[keepaspectratio, scale=0.31]{figs/init.png}
+    \subcaption{Initial position}
+  \end{minipage}
+  \begin{minipage}[t]{0.5\linewidth}
+    \centering
+    \includegraphics[keepaspectratio, scale=0.31]{figs/return.png}
+    \subcaption{Conditions for determining}
+  \end{minipage}\vspace*{2mm}
+\vspace*{-2.5mm}
+  \begin{minipage}[t]{0.5\linewidth}
+    \centering
+    \includegraphics[keepaspectratio, scale=0.31]{figs/init3.png}
+    \subcaption{Robot in initial position}
+  \end{minipage}
+  \begin{minipage}[t]{0.5\linewidth}
+    \centering
+    \includegraphics[keepaspectratio, scale=0.31]{figs/return3.png}
+    \subcaption{Robot returned to path}
+  \end{minipage}\vspace*{4mm}
+  \caption{Analysis of the path-tracking behavior}
 \end{figure}
 
 
