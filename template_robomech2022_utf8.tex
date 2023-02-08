@@ -88,7 +88,7 @@ navigation[7]を用いて自律移動を行う. それと同時に, 画像とnav
 
 \begin{figure}[h!]
   \centering
-   \includegraphics[height=40mm]{./figs/learning.png}
+   \includegraphics[height=42mm]{./figs/ga.png}
    \caption{Learning phase}
 \end{figure}
 
@@ -102,7 +102,7 @@ navigation[7]を用いて自律移動を行う. それと同時に, 画像とnav
 
 \begin{figure}[h!]
   \centering
-   \includegraphics[height=40mm]{./figs/test.png}
+   \includegraphics[height=42mm]{./figs/te.png}
    \caption{Test phase}
 \end{figure}
 
@@ -213,7 +213,7 @@ machine output method では,  50 回中 29 回コースを1周することに�
 
 \begin{figure}[htbp]
   \centering
-   \includegraphics[height=55mm]{./figs/data1.png}
+   \includegraphics[height=55mm]{./figs/tes.png}
    \caption{Percentage of the dataset in the experiment}
 \end{figure}
 
@@ -225,9 +225,9 @@ machine output method では,  50 回中 29 回コースを1周することに�
 ロボットの進行方向を基準にして右側を正の値とし, 左側を負の値とした.調査する場所は, 曲がり角付近とした. 
 この曲がり角というのは, 実験において, 経路追従行動に失敗する回数が特に多かった場所である.
 この場所を対象に,  84 カ所からロボットを走行させ, 経路に戻ることができるのか調査した.
-また, 一つの座標につき 5方向（目標経路を追従するように御した時のロボットの向きを基準とし
+また, 一つの座標につき 5方向（目標経路を追従するように制御した時のロボットの向きを基準とし
 て -10 度〜 10 度を± 5 度ずつ傾けた方向）をロボットの初期姿勢とした. 
-つまり,  一つの学習モデルにつき 420の初期位置からロボットを走行させ, 
+つまり,  一つの学習モデルにつき 420 カ所の初期位置からロボットを走行させ, 
 経路へ復帰できるのか調査した.ここで, 図10に示すように, 壁に衝突することなく目標経路に近づいて, 
 経路周辺 (0.1m 以内)を 4秒間走行することができれば経路復帰に成功したと判断した.
 逆に, 壁に衝突した場合を経路復帰に失敗したと判断した.
@@ -235,7 +235,7 @@ machine output method では,  50 回中 29 回コースを1周することに�
 
 \begin{figure}[h!]
   \centering
-   \includegraphics[height=35mm]{./figs/k.png}
+   \includegraphics[height=36mm]{./figs/k.png}
    \caption{Initial position of the robot during analysis}
 \end{figure}
 
@@ -243,23 +243,23 @@ machine output method では,  50 回中 29 回コースを1周することに�
 \begin{figure}[htbp]
   \begin{minipage}[t]{0.5\linewidth}
     \centering
-    \includegraphics[keepaspectratio, scale=0.31]{figs/init.png}
+    \includegraphics[keepaspectratio, scale=0.32]{figs/init.png}
     \subcaption{Initial position}
   \end{minipage}
   \begin{minipage}[t]{0.5\linewidth}
     \centering
-    \includegraphics[keepaspectratio, scale=0.31]{figs/return.png}
+    \includegraphics[keepaspectratio, scale=0.32]{figs/return.png}
     \subcaption{Conditions for determining}
   \end{minipage}\vspace*{2mm}
 \vspace*{-2.5mm}
   \begin{minipage}[t]{0.5\linewidth}
     \centering
-    \includegraphics[keepaspectratio, scale=0.3]{figs/init4.png}
+    \includegraphics[keepaspectratio, scale=0.32]{figs/init4.png}
     \subcaption{Robot in initial position}
   \end{minipage}
   \begin{minipage}[t]{0.5\linewidth}
     \centering
-    \includegraphics[keepaspectratio, scale=0.31]{figs/return3.png}
+    \includegraphics[keepaspectratio, scale=0.33]{figs/return3.png}
     \subcaption{Robot returned to path}
   \end{minipage}\vspace*{4mm}
   \caption{Analysis of the path-tracking behavior}
@@ -372,7 +372,7 @@ machine output method は, 進行方向を基準とした経路の右側から�
 
 \begin{figure}[h!]\vspace*{-5mm}
   \centering
-   \includegraphics[height=55mm]{./figs/enh.png}
+   \includegraphics[height=55mm]{./figs/tes2.png}
    \caption{Percentage of the dataset in the experiment}
 \end{figure}
 
@@ -387,7 +387,7 @@ Using learning machine output method と比べて経路復帰に成功する確�
 
 \begin{figure}[h!]\
   \centering
-   \includegraphics[height=40mm]{./figs/last.png}
+   \includegraphics[height=40mm]{./figs/la2.png}
    \caption{Percentage able to return to the pathway}
 \end{figure}
 
