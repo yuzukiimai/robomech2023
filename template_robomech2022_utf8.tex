@@ -21,7 +21,7 @@ enhance\\ return-to-pathway behavior-}
 
  &\\
  \multicolumn{2}{l}{\small Yuzuki IMAI, Chiba Institute of Technology, s20c1015as@s.chibakoudai.jp}\\
- \multicolumn{2}{l}{\small Yusuke KIYOOKA, Kenta HARUYAMA}\\
+ \multicolumn{2}{l}{\small Yusuke KIYOOKA, Kenta HARUYAMA, }\\
  \multicolumn{2}{l}{\small Ryuichi UEDA and Yasuo HAYASHIBARA, Institute of Technology}\\
 \end{tabular}
 }
@@ -77,7 +77,7 @@ In addition, we proposed a new method of collecting teacher data to reinforce th
 画像を入力とした学習器の出力によってロボットを制御する. 
 手法は学習器の訓練を行う学習フェーズと, 訓練結果を検証するテストフェーズに分かれる.
 
-\subsection{学習フェイズ}
+\subsection{学習フェーズ}
 図1に学習フェーズのシステムを示す. 学習フェーズでは,ロボットはROSのナビゲーションパッケージである
 navigation[7]を用いて自律移動を行う. それと同時に, 画像とnavigationから出力される目標角速度を
 ペアにしたデータセットを収集し, end-to-end 学習を行う.
@@ -93,7 +93,7 @@ navigation[7]を用いて自律移動を行う. それと同時に, 画像とnav
 \end{figure}
 
 
-\subsection{テストフェイズ}
+\subsection{テストフェーズ}
 テストフェーズでは, 図2のように学習フェーズで学習したモデルを用いてロボット
 を制御し, 自律移動できるかテストする. 64 x 48 にリサイズした画像を学習器に入力し, その
 推定結果をロボットの目標角速度としてロボットを自律移動させる.
@@ -160,7 +160,7 @@ navigation[7]を用いて自律移動を行う. それと同時に, 画像とnav
 
 \begin{figure}[h!]
   \centering
-   \includegraphics[height=28mm]{./figs/dl.png}
+   \includegraphics[height=30mm]{./figs/dl.png}
    \caption{Path following method}
 \end{figure}
 
@@ -175,7 +175,7 @@ machine output method とする.
 
 \begin{figure}[h!]
   \centering
-   \includegraphics[height=38mm]{./figs/dl_use.png}
+   \includegraphics[height=42mm]{./figs/dl_use.png}
    \caption{Using learning machine output method}
 \end{figure}
 
@@ -199,7 +199,9 @@ machine output method では,  50 回中 29 回コースを1周することに�
 従できる確率が高まることが分かった.
 
 \begin{table}[htbp]
-  \caption{Number of successes} \vspace*{2mm}\hspace*{-3mm}
+  \centering
+  \caption{Number of successes} \vspace*{2mm}
+    \scalebox{0.85}[0.85] {
     \begin{tabular}{|l|l|}
       \hline\hline
       Experiment & Number of successes \\
@@ -207,7 +209,7 @@ machine output method では,  50 回中 29 回コースを1周することに�
       Path following method & 0/50 \\
       Using learning machine output method & 29/50 \\
       \hline
-    \end{tabular}
+    \end{tabular} }
 \end {table}
 
 
@@ -358,15 +360,17 @@ machine output method は, 進行方向を基準とした経路の右側から�
 
 
 \begin{table}[h!]
-  \caption{Number of successes} \vspace*{2mm}\hspace*{-10mm}
+  \centering
+  \caption{Number of successes} \vspace*{2mm}
+    \scalebox{0.85}[0.85] {
     \begin{tabular}{|l|l|}
       \hline\hline
       Experiment & Number of successes \\
       \hline\hline
       Using learning machine output method & 29/50 \\
       Enhanced return action method & 42/50\\
-      \hline
-    \end{tabular}
+      \hline 
+    \end{tabular} }
 \end {table}
 
 
