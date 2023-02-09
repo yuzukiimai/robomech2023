@@ -26,6 +26,12 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics-def/dvipdfmx.def
 INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics-def/dvipdfmx.def
+INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-dvips.def
 INPUT /usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-dvips.def
 INPUT out/template_robomech2022_utf8.aux
@@ -49,8 +55,50 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/ptex-fonts/standard/goth9.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbxti10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx9.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
+INPUT ./figs/ga.png
+INPUT extractbb -B cropbox -O ./figs/ga.png
+INPUT ./figs/te.png
+INPUT extractbb -B cropbox -O ./figs/te.png
+OUTPUT out/template_robomech2022_utf8.dvi
+INPUT ./figs/gaku2.png
+INPUT extractbb -B cropbox -O ./figs/gaku2.png
+INPUT figs/gazebo.png
+INPUT extractbb -B cropbox -O figs/gazebo.png
+INPUT figs/rviz.png
+INPUT extractbb -B cropbox -O figs/rviz.png
+INPUT ./figs/dl.png
+INPUT extractbb -B cropbox -O ./figs/dl.png
+INPUT ./figs/dl_use.png
+INPUT extractbb -B cropbox -O ./figs/dl_use.png
+INPUT ./figs/tes.png
+INPUT extractbb -B cropbox -O ./figs/tes.png
+INPUT ./figs/k.png
+INPUT extractbb -B cropbox -O ./figs/k.png
+INPUT figs/init.png
+INPUT extractbb -B cropbox -O figs/init.png
+INPUT figs/return.png
+INPUT extractbb -B cropbox -O figs/return.png
+INPUT figs/init4.png
+INPUT extractbb -B cropbox -O figs/init4.png
+INPUT figs/return3.png
+INPUT extractbb -B cropbox -O figs/return3.png
+INPUT figs/a.png
+INPUT extractbb -B cropbox -O figs/a.png
+INPUT figs/b.png
+INPUT extractbb -B cropbox -O figs/b.png
+INPUT figs/c.png
+INPUT extractbb -B cropbox -O figs/c.png
+INPUT figs/d.png
+INPUT extractbb -B cropbox -O figs/d.png
+INPUT ./figs/path.png
+INPUT extractbb -B cropbox -O ./figs/path.png
+INPUT ./figs/method.png
+INPUT extractbb -B cropbox -O ./figs/method.png
+INPUT ./figs/tes2.png
+INPUT extractbb -B cropbox -O ./figs/tes2.png
+INPUT ./figs/la2.png
+INPUT extractbb -B cropbox -O ./figs/la2.png
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/ptex-fonts/standard/tmin8.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/ptex-fonts/standard/min8.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr8.tfm
-OUTPUT out/template_robomech2022_utf8.dvi
 INPUT out/template_robomech2022_utf8.aux

@@ -1,12 +1,12 @@
-This is e-pTeX, Version 3.14159265-p3.8.2-190908-2.6 (utf8.euc) (TeX Live 2019/Debian) (preloaded format=platex 2022.12.6)  9 FEB 2023 02:34
+This is e-pTeX, Version 3.14159265-p3.8.2-190908-2.6 (utf8.euc) (TeX Live 2019/Debian) (preloaded format=platex 2022.12.6)  9 FEB 2023 02:35
 entering extended mode
  restricted \write18 enabled.
- file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/yuzuki/Tex/rmdformat2022/template_robomech2022_utf8.tex
-(/home/yuzuki/Tex/rmdformat2022/template_robomech2022_utf8.tex
+**template_robomech2022_utf8.tex
+(./template_robomech2022_utf8.tex
 pLaTeX2e <2020-02-02>+2 (based on LaTeX2e <2020-02-02> patch level 2)
-L3 programming layer <2020-02-14> (/usr/share/texlive/texmf-dist/tex/platex/base/jarticle.cls
+L3 programming layer <2020-02-14>
+(/usr/share/texlive/texmf-dist/tex/platex/base/jarticle.cls
 Document Class: jarticle 2020/01/03 v1.8e Standard pLaTeX class
 \c@@paper=\count166
 (/usr/share/texlive/texmf-dist/tex/platex/base/jsize10.clo
@@ -29,7 +29,8 @@ LaTeX Font Info:    Overwriting symbol font `mincho' in version `bold'
 \@lnumwidth=\dimen151
 \bibindent=\dimen152
 \heisei=\count175
-) (./robomech2022.sty
+)
+(./robomech2022.sty
 Document Style Option 'For robomec style file.' by E.Uchibe <31 Jan 95>
 modified by ROBOMECH2022 program committee <15 Oct 21>
 \tmptoki=\toks15
@@ -37,26 +38,34 @@ modified by ROBOMECH2022 program committee <15 Oct 21>
 \c@header=\count176
 ) (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
+
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks17
-) (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
+
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
-) (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: dvipdfmx.def on input line 105.
+
 (/usr/share/texlive/texmf-dist/tex/latex/graphics-def/dvipdfmx.def
 File: dvipdfmx.def 2017/06/24 v5.0g Graphics/color driver for dvipdfmx
 ))
 \Gin@req@height=\dimen153
 \Gin@req@width=\dimen154
-) (/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
+)
+(/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
 Package: subcaption 2020/01/22 v1.3d Sub-captions (AR)
+
 (/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2020/01/03 v3.4h Customizing captions (AR)
+
 (/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2020/01/03 v1.8h caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 61.
@@ -69,7 +78,9 @@ Package caption3 Info: TeX engine: e-TeX on input line 61.
 \caption@hangindent=\dimen161
 Package caption Info: Unknown document class (or package),
 (caption)             standard defaults will be used.
-Package caption Info: \@makecaption = \long macro:#1#2-> \vskip 10pt \setbox \@tempboxa \hbox {#1 #2} \ifdim \wd \@tempboxa >\hsize \@hangfrom {#1 }#2\par \else \hbox to\hsize {\hfil \box \@tempboxa \hfil } \fi  on input line 1082.
+Package caption Info: \@makecaption = \long macro:#1#2-> \vskip 10pt \setbox \@
+tempboxa \hbox {#1 #2} \ifdim \wd \@tempboxa >\hsize \@hangfrom {#1 }#2\par \el
+se \hbox to\hsize {\hfil \box \@tempboxa \hfil } \fi  on input line 1082.
 )
 
 Package caption Warning: Unknown document class (or package),
@@ -90,7 +101,8 @@ File: l3backend-dvips.def 2020-02-03 L3 backend support: dvips
 \g__pdf_backend_annotation_int=\count182
 \g__pdf_backend_link_int=\count183
 \g__pdf_backend_link_sf_int=\count184
-) (out/template_robomech2022_utf8.aux)
+)
+(./template_robomech2022_utf8.aux)
 \openout1 = `template_robomech2022_utf8.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
@@ -133,6 +145,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 41.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 41.
+
 
 LaTeX Font Warning: Font shape `JT1/mc/m/it' undefined
 (Font)              using `JT1/mc/m/n' instead on input line 41.
@@ -257,21 +270,22 @@ File: ./figs/la2.png Graphic file (type bmp)
 <./figs/la2.png>
 
 Underfull \hbox (badness 1377) in paragraph at lines 445--449
-[]\OT1/cmr/m/n/8 Nathan Koenig and An-drew Howard.  \JY1/mc/m/n/8 ” \OT1/cmr/m/n/8 De-sign and use
+[]\OT1/cmr/m/n/8 Nathan Koenig and An-drew Howard.  \JY1/mc/m/n/8 ” \OT1/cmr/m
+/n/8 De-sign and use
  []
 
-[4] (out/template_robomech2022_utf8.aux)
+[4] (./template_robomech2022_utf8.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 2184 strings out of 481768
- 35809 string characters out of 5933620
+ 2182 strings out of 481768
+ 35694 string characters out of 5933620
  286352 words of memory out of 5000000
  17609 multiletter control sequences out of 15000+600000
  541652 words of font info for 61 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
- 48i,14n,46p,371b,573s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 48i,14n,46p,340b,573s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on out/template_robomech2022_utf8.dvi (4 pages, 32084 bytes).
+Output written on template_robomech2022_utf8.dvi (4 pages, 32084 bytes).
