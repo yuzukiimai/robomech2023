@@ -1,11 +1,11 @@
 # Fdb version 3
-["dvipdf"] 1675935259 "out/template_robomech2022_utf8.dvi" "out/template_robomech2022_utf8.pdf" "out/template_robomech2022_utf8" 1675935378
-  "out/template_robomech2022_utf8.dvi" 1675935259 32260 c489e177410db39b7d60cb1e8a10f0db "latex"
+["dvipdf"] 1675938099 "out/template_robomech2022_utf8.dvi" "out/template_robomech2022_utf8.pdf" "out/template_robomech2022_utf8" 1675938101
+  "out/template_robomech2022_utf8.dvi" 1675938099 32260 80d802fd1e6201bd47c659b4ec5a2ca5 "latex"
   (generated)
   "out/template_robomech2022_utf8.pdf"
-["latex"] 1675935257 "/home/yuzuki/robomech2023/template_robomech2022_utf8.tex" "out/template_robomech2022_utf8.dvi" "template_robomech2022_utf8" 1675935378
+["latex"] 1675938097 "/home/yuzuki/robomech2023/template_robomech2022_utf8.tex" "out/template_robomech2022_utf8.dvi" "template_robomech2022_utf8" 1675938101
   "/etc/texmf/web2c/texmf.cnf" 1670336445 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/yuzuki/robomech2023/template_robomech2022_utf8.tex" 1675935378 23178 970fd573e907ee02302f697f10d1ac23 ""
+  "/home/yuzuki/robomech2023/template_robomech2022_utf8.tex" 1675938094 23178 970fd573e907ee02302f697f10d1ac23 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/ptex-fonts/standard/goth10.tfm" 1463434352 1196 5981e79c37b2cfd27b3612a6783cd4b6 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/ptex-fonts/standard/goth9.tfm" 1463434352 1196 b274fc006918dea9e5263e2117f4bddb ""
@@ -61,10 +61,10 @@
   "figs/te.png" 1675922396 124045 8d0f87e9373ffa8f36337c15a4e1ed64 ""
   "figs/tes.png" 1675922396 34674 b48f58c22eb8ca7aadc66f7c06c0d526 ""
   "figs/tes2.png" 1675922396 34252 e3907123e3dfda0c46c836acfb9552f0 ""
-  "out/template_robomech2022_utf8.aux" 1675935259 5354 083e47aae82fb9e400969dfd95db968c "latex"
+  "out/template_robomech2022_utf8.aux" 1675938099 5354 083e47aae82fb9e400969dfd95db968c "latex"
   "robomech2022.sty" 1675922396 10262 2670a87a5790d0f2a0524de43103710d ""
-  "template_robomech2022_utf8.tex" 1675935378 23178 970fd573e907ee02302f697f10d1ac23 ""
+  "template_robomech2022_utf8.tex" 1675938094 23178 970fd573e907ee02302f697f10d1ac23 ""
   (generated)
-  "out/template_robomech2022_utf8.log"
   "out/template_robomech2022_utf8.dvi"
   "out/template_robomech2022_utf8.aux"
+  "out/template_robomech2022_utf8.log"

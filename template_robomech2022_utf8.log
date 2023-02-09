@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.2-190908-2.6 (utf8.euc) (TeX Live 2019/Debian) (preloaded format=platex 2022.12.6)  9 FEB 2023 16:20
+This is e-pTeX, Version 3.14159265-p3.8.2-190908-2.6 (utf8.euc) (TeX Live 2019/Debian) (preloaded format=platex 2022.12.6)  9 FEB 2023 18:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -209,8 +209,8 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 File: ./figs/dl_use.png Graphic file (type bmp)
 <./figs/dl_use.png>
 
-Overfull \hbox (30.75905pt too wide) in paragraph at lines 202--211
-[]|  [][][] 
+Overfull \hbox (6.5429pt too wide) in paragraph at lines 178--179
+ [][] 
  []
 
 File: ./figs/tes.png Graphic file (type bmp)
@@ -227,12 +227,12 @@ File: figs/init4.png Graphic file (type bmp)
 File: figs/return3.png Graphic file (type bmp)
 <figs/return3.png>
 
-Overfull \hbox (2.22221pt too wide) in paragraph at lines 244--265
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 246--267
 [][] []
  []
 
 
-Overfull \hbox (2.22221pt too wide) in paragraph at lines 244--265
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 246--267
 [] [] 
  []
 
@@ -241,7 +241,7 @@ File: figs/a.png Graphic file (type bmp)
 File: figs/b.png Graphic file (type bmp)
 <figs/b.png>
 
-Overfull \hbox (2.22221pt too wide) in paragraph at lines 288--298
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 290--300
 [][] [] 
  []
 
@@ -250,7 +250,7 @@ File: figs/c.png Graphic file (type bmp)
 File: figs/d.png Graphic file (type bmp)
 <figs/d.png>
 
-Overfull \hbox (2.22221pt too wide) in paragraph at lines 302--312
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 304--314
 [][] [] 
  []
 
@@ -259,17 +259,12 @@ File: ./figs/kaiseki2.png Graphic file (type bmp)
 [3]
 File: ./figs/method.png Graphic file (type bmp)
 <./figs/method.png>
-
-Overfull \hbox (10.84212pt too wide) in paragraph at lines 361--370
-[]|  [][][] 
- []
-
 File: ./figs/tes2.png Graphic file (type bmp)
 <./figs/tes2.png>
 File: ./figs/kaiseki2-2.png Graphic file (type bmp)
 <./figs/kaiseki2-2.png>
 
-Underfull \hbox (badness 1377) in paragraph at lines 445--449
+Underfull \hbox (badness 1377) in paragraph at lines 449--453
 []\OT1/cmr/m/n/8 Nathan Koenig and An-drew Howard.  \JY1/mc/m/n/8 ” \OT1/cmr/m
 /n/8 De-sign and use
  []
@@ -288,4 +283,4 @@ Here is how much of TeX's memory you used:
  929 hyphenation exceptions out of 8191
  48i,14n,46p,340b,573s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on template_robomech2022_utf8.dvi (4 pages, 32164 bytes).
+Output written on template_robomech2022_utf8.dvi (4 pages, 32260 bytes).
