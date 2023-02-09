@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.2-190908-2.6 (utf8.euc) (TeX Live 2019/Debian) (preloaded format=platex 2022.12.6)  9 FEB 2023 02:35
+This is e-pTeX, Version 3.14159265-p3.8.2-190908-2.6 (utf8.euc) (TeX Live 2019/Debian) (preloaded format=platex 2022.12.6)  9 FEB 2023 16:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -254,8 +254,8 @@ Overfull \hbox (2.22221pt too wide) in paragraph at lines 302--312
 [][] [] 
  []
 
-File: ./figs/path.png Graphic file (type bmp)
-<./figs/path.png>
+File: ./figs/kaiseki2.png Graphic file (type bmp)
+<./figs/kaiseki2.png>
 [3]
 File: ./figs/method.png Graphic file (type bmp)
 <./figs/method.png>
@@ -266,8 +266,8 @@ Overfull \hbox (10.84212pt too wide) in paragraph at lines 361--370
 
 File: ./figs/tes2.png Graphic file (type bmp)
 <./figs/tes2.png>
-File: ./figs/la2.png Graphic file (type bmp)
-<./figs/la2.png>
+File: ./figs/kaiseki2-2.png Graphic file (type bmp)
+<./figs/kaiseki2-2.png>
 
 Underfull \hbox (badness 1377) in paragraph at lines 445--449
 []\OT1/cmr/m/n/8 Nathan Koenig and An-drew Howard.  \JY1/mc/m/n/8 ” \OT1/cmr/m
@@ -281,11 +281,11 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
  ) 
 Here is how much of TeX's memory you used:
  2182 strings out of 481768
- 35694 string characters out of 5933620
- 286352 words of memory out of 5000000
+ 35738 string characters out of 5933620
+ 286353 words of memory out of 5000000
  17609 multiletter control sequences out of 15000+600000
  541652 words of font info for 61 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
  48i,14n,46p,340b,573s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on template_robomech2022_utf8.dvi (4 pages, 32084 bytes).
+Output written on template_robomech2022_utf8.dvi (4 pages, 32164 bytes).
