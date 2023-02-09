@@ -1,4 +1,4 @@
-PWD /home/yuzuki/Tex/rmdformat2022
+PWD /home/yuzuki/robomech2023
 INPUT /etc/texmf/web2c/texmf.cnf
 INPUT /usr/share/texmf/web2c/texmf.cnf
 INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
@@ -6,7 +6,7 @@ INPUT /etc/texmf/web2c/texmf.cnf
 INPUT /usr/share/texmf/web2c/texmf.cnf
 INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/eptex/platex.fmt
-INPUT /home/yuzuki/Tex/rmdformat2022/template_robomech2022_utf8.tex
+INPUT /home/yuzuki/robomech2023/template_robomech2022_utf8.tex
 OUTPUT out/template_robomech2022_utf8.log
 INPUT /usr/share/texlive/texmf-dist/tex/platex/base/jarticle.cls
 INPUT /usr/share/texlive/texmf-dist/tex/platex/base/jarticle.cls
@@ -90,14 +90,14 @@ INPUT figs/c.png
 INPUT extractbb -B cropbox -O figs/c.png
 INPUT figs/d.png
 INPUT extractbb -B cropbox -O figs/d.png
-INPUT ./figs/path.png
-INPUT extractbb -B cropbox -O ./figs/path.png
+INPUT ./figs/kaiseki2.png
+INPUT extractbb -B cropbox -O ./figs/kaiseki2.png
 INPUT ./figs/method.png
 INPUT extractbb -B cropbox -O ./figs/method.png
 INPUT ./figs/tes2.png
 INPUT extractbb -B cropbox -O ./figs/tes2.png
-INPUT ./figs/la2.png
-INPUT extractbb -B cropbox -O ./figs/la2.png
+INPUT ./figs/kaiseki2-2.png
+INPUT extractbb -B cropbox -O ./figs/kaiseki2-2.png
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/ptex-fonts/standard/tmin8.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/ptex-fonts/standard/min8.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr8.tfm

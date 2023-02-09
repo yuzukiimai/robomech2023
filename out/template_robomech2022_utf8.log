@@ -1,10 +1,10 @@
-This is e-pTeX, Version 3.14159265-p3.8.2-190908-2.6 (utf8.euc) (TeX Live 2019/Debian) (preloaded format=platex 2022.12.6)  9 FEB 2023 02:34
+This is e-pTeX, Version 3.14159265-p3.8.2-190908-2.6 (utf8.euc) (TeX Live 2019/Debian) (preloaded format=platex 2022.12.6)  9 FEB 2023 15:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/yuzuki/Tex/rmdformat2022/template_robomech2022_utf8.tex
-(/home/yuzuki/Tex/rmdformat2022/template_robomech2022_utf8.tex
+**/home/yuzuki/robomech2023/template_robomech2022_utf8.tex
+(/home/yuzuki/robomech2023/template_robomech2022_utf8.tex
 pLaTeX2e <2020-02-02>+2 (based on LaTeX2e <2020-02-02> patch level 2)
 L3 programming layer <2020-02-14> (/usr/share/texlive/texmf-dist/tex/platex/base/jarticle.cls
 Document Class: jarticle 2020/01/03 v1.8e Standard pLaTeX class
@@ -241,8 +241,8 @@ Overfull \hbox (2.22221pt too wide) in paragraph at lines 302--312
 [][] [] 
  []
 
-File: ./figs/path.png Graphic file (type bmp)
-<./figs/path.png>
+File: ./figs/kaiseki2.png Graphic file (type bmp)
+<./figs/kaiseki2.png>
 [3]
 File: ./figs/method.png Graphic file (type bmp)
 <./figs/method.png>
@@ -253,8 +253,8 @@ Overfull \hbox (10.84212pt too wide) in paragraph at lines 361--370
 
 File: ./figs/tes2.png Graphic file (type bmp)
 <./figs/tes2.png>
-File: ./figs/la2.png Graphic file (type bmp)
-<./figs/la2.png>
+File: ./figs/kaiseki2-2.png Graphic file (type bmp)
+<./figs/kaiseki2-2.png>
 
 Underfull \hbox (badness 1377) in paragraph at lines 445--449
 []\OT1/cmr/m/n/8 Nathan Koenig and An-drew Howard.  \JY1/mc/m/n/8 ” \OT1/cmr/m/n/8 De-sign and use
@@ -267,11 +267,11 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
  ) 
 Here is how much of TeX's memory you used:
  2184 strings out of 481768
- 35809 string characters out of 5933620
- 286352 words of memory out of 5000000
+ 35838 string characters out of 5933620
+ 286353 words of memory out of 5000000
  17609 multiletter control sequences out of 15000+600000
  541652 words of font info for 61 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
- 48i,14n,46p,371b,573s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 48i,14n,46p,366b,573s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on out/template_robomech2022_utf8.dvi (4 pages, 32084 bytes).
+Output written on out/template_robomech2022_utf8.dvi (4 pages, 32092 bytes).
