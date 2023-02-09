@@ -1,4 +1,4 @@
-PWD /home/yuzuki/robomech2023
+PWD /home/yuzuki/Tex/robomech2023
 INPUT /etc/texmf/web2c/texmf.cnf
 INPUT /usr/share/texmf/web2c/texmf.cnf
 INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
@@ -6,7 +6,7 @@ INPUT /etc/texmf/web2c/texmf.cnf
 INPUT /usr/share/texmf/web2c/texmf.cnf
 INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/eptex/platex.fmt
-INPUT /home/yuzuki/robomech2023/template_robomech2022_utf8.tex
+INPUT /home/yuzuki/Tex/robomech2023/template_robomech2022_utf8.tex
 OUTPUT out/template_robomech2022_utf8.log
 INPUT /usr/share/texlive/texmf-dist/tex/platex/base/jarticle.cls
 INPUT /usr/share/texlive/texmf-dist/tex/platex/base/jarticle.cls
