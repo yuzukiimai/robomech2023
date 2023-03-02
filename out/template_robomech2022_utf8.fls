@@ -74,10 +74,10 @@ INPUT ./figs/tes.png
 INPUT extractbb -B cropbox -O ./figs/tes.png
 INPUT ./figs/k.png
 INPUT extractbb -B cropbox -O ./figs/k.png
-INPUT figs/init.png
-INPUT extractbb -B cropbox -O figs/init.png
-INPUT figs/return.png
-INPUT extractbb -B cropbox -O figs/return.png
+INPUT figs/1.png
+INPUT extractbb -B cropbox -O figs/1.png
+INPUT figs/2.png
+INPUT extractbb -B cropbox -O figs/2.png
 INPUT figs/init4.png
 INPUT extractbb -B cropbox -O figs/init4.png
 INPUT figs/return3.png

@@ -1,11 +1,11 @@
 # Fdb version 3
-["dvipdf"] 1676005781 "out/template_robomech2022_utf8.dvi" "out/template_robomech2022_utf8.pdf" "out/template_robomech2022_utf8" 1676005782
-  "out/template_robomech2022_utf8.dvi" 1676005781 32256 244b4d179998bb053afcc37da37c1dca "latex"
+["dvipdf"] 1677528572 "out/template_robomech2022_utf8.dvi" "out/template_robomech2022_utf8.pdf" "out/template_robomech2022_utf8" 1677528574
+  "out/template_robomech2022_utf8.dvi" 1677528572 32528 7104987877375f34abd42cc879cc9aa7 "latex"
   (generated)
   "out/template_robomech2022_utf8.pdf"
-["latex"] 1676005779 "/home/yuzuki/Tex/robomech2023/template_robomech2022_utf8.tex" "out/template_robomech2022_utf8.dvi" "template_robomech2022_utf8" 1676005782
+["latex"] 1677528571 "/home/yuzuki/Tex/robomech2023/template_robomech2022_utf8.tex" "out/template_robomech2022_utf8.dvi" "template_robomech2022_utf8" 1677528574
   "/etc/texmf/web2c/texmf.cnf" 1670335848 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/yuzuki/Tex/robomech2023/template_robomech2022_utf8.tex" 1676005779 23265 46671ab576e33bae72ce8171f07c11a2 ""
+  "/home/yuzuki/Tex/robomech2023/template_robomech2022_utf8.tex" 1677528570 23330 83100c866b3161096b2a897d7d162bdd ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/ptex-fonts/standard/goth10.tfm" 1463434352 1196 5981e79c37b2cfd27b3612a6783cd4b6 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/ptex-fonts/standard/goth9.tfm" 1463434352 1196 b274fc006918dea9e5263e2117f4bddb ""
@@ -40,6 +40,8 @@
   "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1581979058 38841 ce3692aa899bb693b90b87eaa5d4d84e ""
   "/usr/share/texmf/web2c/texmf.cnf" 1581979058 38841 ce3692aa899bb693b90b87eaa5d4d84e ""
   "/var/lib/texmf/web2c/eptex/platex.fmt" 1670335912 10598660 88c471ab1f5e8d88900712abc31f9a16 ""
+  "figs/1.png" 1677528360 37036 847207e5810422c3670db59e4040cc47 ""
+  "figs/2.png" 1677528359 37715 cbe6a42a5a01e1ac27210700674eb427 ""
   "figs/a.png" 1675976618 41334 e59879bee77462968529a2ba10521441 ""
   "figs/b.png" 1675976618 42220 e4ab003382e582c74bf580014dc583aa ""
   "figs/c.png" 1675976618 68980 0ef77b933d6bf27ff6c93fc7db61d4c1 ""
@@ -49,22 +51,20 @@
   "figs/ga.png" 1675976618 122741 3c703427a92f785365b8a40d975a06cb ""
   "figs/gaku2.png" 1675976618 27065 8ea397f250aed3fe180cd7b5c598bc2a ""
   "figs/gazebo.png" 1675976618 95169 4c5bb797eb0b268cbf6c1f00884db693 ""
-  "figs/init.png" 1675976618 11928 9d338e4bac1af489eb8ae5e297e81527 ""
   "figs/init4.png" 1675976618 4538 aa8615d44e6f41f991f6570b06537ecf ""
   "figs/k.png" 1675976618 19658 59ad32053ec8291cde7ab3d790638c42 ""
   "figs/kaiseki2-2.png" 1675976618 29031 2494aa96517472b53dead27fe4e56d43 ""
   "figs/kaiseki2.png" 1675976618 28834 2d3c25bc437f8378ba1512f153c43ea0 ""
   "figs/method.png" 1675976618 11530 23a028031a0695a4fd2f5c23716523ae ""
-  "figs/return.png" 1675976618 12253 e0806ab7381f5e1f17d004027f788090 ""
   "figs/return3.png" 1675976618 3347 53aa8580c56f3343b731abbf4f5d9329 ""
   "figs/rviz.png" 1675976618 29032 6eaa7c191df28c3726fd51189ec156cd ""
   "figs/te.png" 1675976618 124045 8d0f87e9373ffa8f36337c15a4e1ed64 ""
   "figs/tes.png" 1675976618 34674 b48f58c22eb8ca7aadc66f7c06c0d526 ""
   "figs/tes2.png" 1675976618 34252 e3907123e3dfda0c46c836acfb9552f0 ""
-  "out/template_robomech2022_utf8.aux" 1676005781 5354 083e47aae82fb9e400969dfd95db968c "latex"
+  "out/template_robomech2022_utf8.aux" 1677528572 5137 7288c0f63ef7bac93335c142fac36934 "latex"
   "robomech2022.sty" 1675976618 10262 2670a87a5790d0f2a0524de43103710d ""
-  "template_robomech2022_utf8.tex" 1676005779 23265 46671ab576e33bae72ce8171f07c11a2 ""
+  "template_robomech2022_utf8.tex" 1677528570 23330 83100c866b3161096b2a897d7d162bdd ""
   (generated)
   "out/template_robomech2022_utf8.aux"
-  "out/template_robomech2022_utf8.log"
   "out/template_robomech2022_utf8.dvi"
+  "out/template_robomech2022_utf8.log"
